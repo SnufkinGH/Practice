@@ -1,12 +1,12 @@
 import express from 'express';
 
+import * as EmployeeProductivityCtrl from './Module/EmployeeProductivity/EmployeeProductivityCtrl';
+
 const PORT = 5111;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    console.log(req.query);
-    res.status(200).json('Server is working');
-})
+app.use(express.json());
+app.use('/api', EmployeeProductivityCtrl.router)
 
 app.listen(PORT, () => console.log('SERVER STARTED ON PORT ' + PORT));
