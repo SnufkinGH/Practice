@@ -6,13 +6,12 @@ export namespace EmployeeProductivityR {
         export const route = '/employee-productivity/get-employee-points';
 
         export interface RequestI {
-            employee_id: number; // ID сотрудника
-            date_start: string; // Начало срока
-            date_end?: string; // Конец срока
+            employee_name: string; // Имя сотрудника
+            sprint: string; // Название спринта
         }
 
         export interface ResponseI {
-            employee_id: number; // ID сотрудника
+            employee_name: string; // Имя сотрудника
             cnt_points: number; // Количество баллов сотрудника
         }
 }
