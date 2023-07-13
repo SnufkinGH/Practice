@@ -51,7 +51,6 @@ export class EmployeeProductivityM {
         }
 
         return {
-            employee_name: data.employee_name,
             cnt_points: cntPoints
         }
     }

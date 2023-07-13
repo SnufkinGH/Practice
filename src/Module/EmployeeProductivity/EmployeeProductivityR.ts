@@ -11,7 +11,6 @@ export namespace EmployeeProductivityR {
         }
 
         export interface ResponseI {
-            employee_name: string; // Имя сотрудника
             cnt_points: number; // Количество баллов сотрудника
         }
 }
