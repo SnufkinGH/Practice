@@ -18,7 +18,7 @@ export class EmployeeProductivityM {
                 query: `#${data.employee_name} #Завершено #{${data.sprint}}`
             },
             headers: {
-                'Authorization': 'Bearer 1689261284877.a819b89f-0243-4d73-9d14-d586c8ad0b13.86ee826b-43c8-4a03-adb7-9da19d0e730e.a819b89f-0243-4d73-9d14-d586c8ad0b13 0-0-0-0-0;1.MC0CFQCF53Uhj7T+JZ8elce2ruhZVpnFLAIUe66AUtvNDzA2bMsACf2NceWf8fE='
+                'Authorization': 'Bearer 1689264296876.a819b89f-0243-4d73-9d14-d586c8ad0b13.86ee826b-43c8-4a03-adb7-9da19d0e730e.a819b89f-0243-4d73-9d14-d586c8ad0b13 0-0-0-0-0;1.MCwCFDreQldB3NqAmhkVSjrCt8KWngYTAhQlH6GNCCILc3PE+dYaxEPnBYm0hA=='
             }
         })
 
