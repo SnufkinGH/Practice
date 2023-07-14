@@ -17,9 +17,15 @@ export class EmployeeProductivityCtrl {
 router.post(
     R.getEmployeePoints.route,
     async (req: express.Request, res: express.Response) => {
-        const ctrl = new EmployeeProductivityCtrl();
-        const out = await ctrl.employeeProductivityM.getEmployeePoints(req.body);
-        res.send(out);
+        try {
+            const ctrl = new EmployeeProductivityCtrl();
+            const out = await ctrl.employeeProductivityM.getEmployeePoints(req.body);
+            res.send(out);
+        }catch(e){
+            console.log(e);
+            res.send('ОШИБКА');
+        }
+        
     }
 );
 
